@@ -1,5 +1,5 @@
 Summary:	Various utilities for Linux/PowerPC
-Summary(pl):	Ró¿ne narzêdzia dla Linuksa na PowerPC
+Summary(pl.UTF-8):   RÃ³Å¼ne narzÄ™dzia dla Linuksa na PowerPC
 Name:		powerpc-utils
 Version:	1.1.3
 Release:	1
@@ -23,13 +23,13 @@ Utilities for Linux on PowerPC hardware:
 - fblevel - control LCD/TFT display backlight brightness.
 - fnset - set PowerBook keyboard function keys mode.
 
-%description -l pl
-Narzêdzia dla Linuksa na sprzêcie PowerPC:
-- mousemode - ustawianie myszy ADB do u¿ywania podanego ID urz±dzenia
-- nvsetenv - zmiana/ogl±danie zmiennych ¶rodowiskowych OpenFirmware
-- nvsetvol - ustawianie g³o¶no¶ci zapisanej w OpenFirmware
+%description -l pl.UTF-8
+NarzÄ™dzia dla Linuksa na sprzÄ™cie PowerPC:
+- mousemode - ustawianie myszy ADB do uÅ¼ywania podanego ID urzÄ…dzenia
+- nvsetenv - zmiana/oglÄ…danie zmiennych Å›rodowiskowych OpenFirmware
+- nvsetvol - ustawianie gÅ‚oÅ›noÅ›ci zapisanej w OpenFirmware
 - trackpad - zmiana zachowania trackpada w PowerBooku (tryb tap/drag)
-- fblevel - sterowanie jasno¶ci± pod¶wietlenia wy¶wietlacza LCD/TFT
+- fblevel - sterowanie jasnoÅ›ciÄ… podÅ›wietlenia wyÅ›wietlacza LCD/TFT
 - fnset - ustawianie trybu klawiszy funkcyjnych klawiatury PowerBooka
 
 %prep
