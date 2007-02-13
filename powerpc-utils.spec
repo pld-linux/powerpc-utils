@@ -1,5 +1,5 @@
 Summary:	Various utilities for Linux/PowerPC
-Summary(pl.UTF-8):   Różne narzędzia dla Linuksa na PowerPC
+Summary(pl.UTF-8):	Różne narzędzia dla Linuksa na PowerPC
 Name:		powerpc-utils
 Version:	1.1.3
 Release:	1
