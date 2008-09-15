@@ -7,7 +7,7 @@ License:	GPL
 Group:		Applications/System
 Source0:	http://ftp.debian.org/debian/pool/main/p/powerpc-utils/%{name}_%{version}.orig.tar.gz
 # Source0-md5:	d879b109bb8f0d726304b60b147bff13
-Patch0:		%{name}_%{version}-debian.diff.gz
+Patch0:		%{name}-debian.patch.gz
 BuildRequires:	sgml-tools
 Provides:	pmac-utils = %{version}-%{release}
 Obsoletes:	pmac-utils
@@ -37,7 +37,7 @@ Narzędzia dla Linuksa na sprzęcie PowerPC:
 %patch0 -p1
 
 %build
-%{__make} all-man all \
+%{__make} all-man all fdeject nvvideo \
 	CC="%{__cc}" \
 	CFLAGS="%{rpmcflags}"
 
@@ -45,13 +45,15 @@ Narzędzia dla Linuksa na sprzęcie PowerPC:
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT{%{_bindir},%{_sbindir},%{_mandir}/man8}
 
-install mousemode.8 nvsetenv.8 nvsetvol.8 trackpad.8 fblevel.8 \
+install autoboot.8 fdeject.8 fblevel.8 mousemode.8 nvsetenv.8 nvsetvol.8 nvvideo.8 \
+	trackpad.8 \
 	$RPM_BUILD_ROOT%{_mandir}/man8
 
-install mousemode nvsetenv nvsetvol backlight trackpad fblevel fnset \
+install autoboot backlight bootsched fblevel fnset \
+	mousemode nvsetenv nvsetvol nvvideo trackpad \
 	$RPM_BUILD_ROOT%{_sbindir}
 
-install lsprop $RPM_BUILD_ROOT%{_bindir}
+install fdeject lsprop $RPM_BUILD_ROOT%{_bindir}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
