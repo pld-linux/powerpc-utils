@@ -2,7 +2,7 @@ Summary:	Various utilities for Linux/PowerPC
 Summary(pl.UTF-8):	Różne narzędzia dla Linuksa na PowerPC
 Name:		powerpc-utils
 Version:	1.1.3
-Release:	1
+Release:	2
 License:	GPL
 Group:		Applications/System
 Source0:	http://ftp.debian.org/debian/pool/main/p/powerpc-utils/%{name}_%{version}.orig.tar.gz
