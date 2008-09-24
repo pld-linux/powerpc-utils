@@ -39,7 +39,8 @@ Narzędzia dla Linuksa na sprzęcie PowerPC:
 %build
 %{__make} all-man all fdeject nvvideo \
 	CC="%{__cc}" \
-	CFLAGS="%{rpmcflags}"
+	CFLAGS="%{rpmcflags} -D_GNU_SOURCE" \
+	LDFLAGS="%{rpmldflags}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
@@ -49,11 +50,11 @@ install autoboot.8 fdeject.8 fblevel.8 mousemode.8 nvsetenv.8 nvsetvol.8 nvvideo
 	trackpad.8 \
 	$RPM_BUILD_ROOT%{_mandir}/man8
 
-install autoboot backlight bootsched fblevel fnset \
+install autoboot backlight bootsched fnset \
 	mousemode nvsetenv nvsetvol nvvideo trackpad \
 	$RPM_BUILD_ROOT%{_sbindir}
 
-install fdeject lsprop $RPM_BUILD_ROOT%{_bindir}
+install fblevel fdeject lsprop $RPM_BUILD_ROOT%{_bindir}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
