@@ -2,7 +2,7 @@ Summary:	Various utilities for Linux on Apple PowerPC hardware
 Summary(pl.UTF-8):	Różne narzędzia dla Linuksa na platformie PowerPC firmy Apple
 Name:		powerpc-utils
 Version:	1.1.3
-Release:	2
+Release:	3
 License:	GPL v2+
 Group:		Applications/System
 Source0:	http://ftp.debian.org/debian/pool/main/p/powerpc-utils/%{name}_%{version}.orig.tar.gz
@@ -11,7 +11,7 @@ Patch0:		%{name}-debian.patch.gz
 BuildRequires:	sgml-tools
 Provides:	pmac-utils = %{version}-%{release}
 Obsoletes:	pmac-utils
-#ExclusiveArch:	ppc ppc64
+ExclusiveArch:	ppc ppc64
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
