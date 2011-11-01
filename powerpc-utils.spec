@@ -7,7 +7,8 @@ License:	GPL v2+
 Group:		Applications/System
 Source0:	http://ftp.debian.org/debian/pool/main/p/powerpc-utils/%{name}_%{version}.orig.tar.gz
 # Source0-md5:	d879b109bb8f0d726304b60b147bff13
-Patch0:		%{name}-debian.patch.gz
+Patch0:		ftp://ftp.debian.org/debian/pool/main/p/powerpc-utils/%{name}_%{version}-24.diff.gz
+# Patch0-md5:	7766bd30b8f97bf584addca797a50327
 BuildRequires:	sgml-tools
 Provides:	pmac-utils = %{version}-%{release}
 Obsoletes:	pmac-utils
