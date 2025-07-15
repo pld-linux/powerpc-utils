@@ -51,7 +51,7 @@ Narzędzia dla Linuksa na sprzęcie PowerPC firmy Apple (PMac):
 
 %prep
 %setup -q -n pmac-utils
-%patch0 -p1
+%patch -P0 -p1
 
 %build
 %{__make} all-man all fdeject nvvideo sndvolmix \
